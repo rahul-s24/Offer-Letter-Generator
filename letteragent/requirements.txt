@@ -1,0 +1,6 @@
+langchain
+openai
+pypdf
+faiss-cpu
+pandas
+python-dotenv
