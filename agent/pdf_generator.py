@@ -22,6 +22,13 @@ from fpdf import FPDF
 import pdfkit
 
 def generate_pdf(employee_name, html_string):
+    # This path might vary depending on your installation location.
+    # The default for a 64-bit Windows machine is usually this.
+    path_to_wkhtmltopdf = r'E:\VS Code\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    
+    # Configure pdfkit to use the specified executable
+    config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
+
     output_dir = "output/generated_letters"
     os.makedirs(output_dir, exist_ok=True)
     file_path = os.path.join(output_dir, f"{employee_name.replace(' ', '_')}_Offer_Letter.pdf")
@@ -31,6 +38,6 @@ def generate_pdf(employee_name, html_string):
         "encoding": "UTF-8"
     }
 
-    pdfkit.from_string(html_string, file_path, options=options)
+    # Pass the configuration object to the from_string method
+    pdfkit.from_string(html_string, file_path, options=options, configuration=config)
     return file_path
-
