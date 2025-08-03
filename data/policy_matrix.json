@@ -1,0 +1,120 @@
+{
+  "leave_entitlements": {
+    "L1": {
+      "total_leave_days": 12,
+      "earned_leave": 6,
+      "sick_leave": 4,
+      "casual_leave": 2,
+      "wfh_eligibility": "Limited",
+      "wfo_min_days": "4/week"
+    },
+    "L2": {
+      "total_leave_days": 15,
+      "earned_leave": 8,
+      "sick_leave": 5,
+      "casual_leave": 2,
+      "wfh_eligibility": "Partial",
+      "wfo_min_days": "3–4/week"
+    },
+    "L3": {
+      "total_leave_days": 18,
+      "earned_leave": 10,
+      "sick_leave": 6,
+      "casual_leave": 2,
+      "wfh_eligibility": "Yes",
+      "wfo_min_days": "3/week"
+    },
+    "L4": {
+      "total_leave_days": 20,
+      "earned_leave": 12,
+      "sick_leave": 6,
+      "casual_leave": 2,
+      "wfh_eligibility": "Yes",
+      "wfo_min_days": "2–3/week"
+    },
+    "L5": {
+      "total_leave_days": "Unlimited (with approval)",
+      "earned_leave": "NA",
+      "sick_leave": "NA",
+      "casual_leave": "NA",
+      "wfh_eligibility": "Full Flex",
+      "wfo_min_days": "0–2/week (optional)"
+    }
+  },
+
+  "wfo_policy": {
+    "Engineering": {
+      "min_days": "3/week",
+      "suggested_days": "Mon, Tue, Thu",
+      "notes": "Sprint reviews must be in-office"
+    },
+    "Sales": {
+      "min_days": "4–5/week",
+      "suggested_days": "Field visits + office",
+      "notes": "Remote only with RSM approval"
+    },
+    "HR": {
+      "min_days": "4/week",
+      "suggested_days": "Mon–Thu",
+      "notes": "In-office mandatory during onboarding"
+    },
+    "Finance": {
+      "min_days": "3/week",
+      "suggested_days": "Tue, Wed, Fri",
+      "notes": "Fully in-office during month-end"
+    },
+    "Ops/Support": {
+      "min_days": "5/week",
+      "suggested_days": "All weekdays",
+      "notes": "WFH not permitted except in emergencies"
+    }
+  },
+
+  "travel_policy": {
+    "L1": {
+      "travel_mode_domestic": "Train 2AC / Bus",
+      "international_eligibility": "VP approval only",
+      "flight_class": "Economy (on approval)",
+      "hotel_cap_per_night": "Rs. 2,000",
+      "per_diem_domestic": "Rs. 1,500",
+      "per_diem_international": "USD 30",
+      "approval_required": "Manager + VP"
+    },
+    "L2": {
+      "travel_mode_domestic": "Economy flight if >6 hrs",
+      "international_eligibility": "Director approval",
+      "flight_class": "Economy",
+      "hotel_cap_per_night": "Rs. 3,000",
+      "per_diem_domestic": "Rs. 2,000",
+      "per_diem_international": "USD 40",
+      "approval_required": "Manager + Director"
+    },
+    "L3": {
+      "travel_mode_domestic": "Economy standard",
+      "international_eligibility": "Permitted",
+      "flight_class": "Economy",
+      "hotel_cap_per_night": "Rs. 4,000",
+      "per_diem_domestic": "Rs. 3,000",
+      "per_diem_international": "USD 60",
+      "approval_required": "Reporting Manager"
+    },
+    "L4": {
+      "travel_mode_domestic": "Premium economy (justified)",
+      "international_eligibility": "Standard Business",
+      "flight_class": "Economy",
+      "hotel_cap_per_night": "Rs. 6,000",
+      "per_diem_domestic": "Rs. 4,500",
+      "per_diem_international": "USD 80",
+      "approval_required": "VP"
+    },
+    "L5": {
+      "travel_mode_domestic": "Business class",
+      "international_eligibility": "Standard Business",
+      "flight_class": "Business",
+      "hotel_cap_per_night": "Rs. 10,000",
+      "per_diem_domestic": "Rs. 7,500",
+      "per_diem_international": "USD 120",
+      "approval_required": "None"
+    }
+  }
+}

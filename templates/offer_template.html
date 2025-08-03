@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 6px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    .footer {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Offer Letter – Company ABC</h1>
+  <p><strong>Date:</strong> {{ date }}<br>
+  <strong>Candidate Name:</strong> {{ name }}<br>
+  <strong>Position:</strong> {{ position }}<br>
+  <strong>Band Level:</strong> {{ band }}<br>
+  <strong>Location:</strong> {{ location }}<br>
+  <strong>Joining Date:</strong> {{ joining_date }}</p>
+
+  <div class="section">
+    <h2><span class="emoji">🎯</span>Appointment Details</h2>
+    <p>We are delighted to offer you the position of {{ position }} in the {{ position }} team at Company ABC.
+    This is a full-time role based out of our {{ location }} office. Your employment will be governed by the
+    terms outlined in this letter and the Employee Handbook.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">💰</span>Compensation Structure</h2>
+    <table>
+      <tr><th>Component</th><th>Annual (INR)</th></tr>
+      <tr><td>Fixed Salary</td><td>{{ base }}</td></tr>
+      <tr><td>Performance Bonus</td><td>{{ perf }}</td></tr>
+      <tr><td>Retention Bonus</td><td>{{ ret }}</td></tr>
+      <tr><td><strong>Total CTC</strong></td><td><strong>{{ total }}</strong></td></tr>
+    </table>
+    <p>Performance bonuses are disbursed quarterly, subject to performance evaluation.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🏖</span>Leave Entitlements (Band {{ band }})</h2>
+    <pre>{{ leave_summary }}</pre>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🏢</span>Work From Office Policy ({{ position }} Team)</h2>
+    <pre>{{ wfo_summary }}</pre>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">✈️</span>Travel Policy (Band {{ band }})</h2>
+    <pre>{{ travel_summary }}</pre>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🔒</span>Confidentiality & IP Clause</h2>
+    <p>You are expected to maintain strict confidentiality of all proprietary data, financials, codebases, and client information.
+    All work products created during employment shall remain the intellectual property of Company ABC.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">🚨</span>Termination & Exit</h2>
+    <ul>
+      <li>Either party may terminate the employment with 60 days' notice.</li>
+      <li>During probation (first 3 months), a 15-day notice period applies.</li>
+      <li>All company property and access must be returned on final working day.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="emoji">✅</span>Next Steps</h2>
+    <p>Please confirm your acceptance of this offer by signing and returning this letter via DocuSign within 5 working days.
+    Upon acceptance, your onboarding buddy and People Ops partner will reach out with pre-joining formalities.</p>
+  </div>
+
+  <div class="footer">
+    <p>Warm regards,<br><strong>HR Name</strong><br>HR Business Partner<br>📧 peopleops@companyabc.com<br>🌐 www.companyabc.com</p>
+  </div>
+</body>
+</html>
